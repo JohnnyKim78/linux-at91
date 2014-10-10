@@ -3685,6 +3685,14 @@ static int NMI_WFI_start_ap(struct wiphy *wiphy, struct net_device *dev,
 	PRINT_D(HOSTAPD_DBG,"Interval = %d \n DTIM period = %d\n Head length = %d Tail length = %d\n",
 		settings->beacon_interval , settings->dtim_period, beacon->head_len, beacon->tail_len );
 
+
+//[[ johnny
+#if LINUX_VERSION_CODE >= KERNEL_VERSION(3,6,0)
+        NMI_WFI_CfgSetChannel(wiphy,&settings->chandef);
+#endif
+//]]
+
+
 	linux_wlan_set_bssid(dev,g_linux_wlan->strInterfaceInfo[0].aSrcAddress);
 	
 	#ifndef NMI_FULLY_HOSTING_AP
