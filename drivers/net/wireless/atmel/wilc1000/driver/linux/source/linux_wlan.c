@@ -231,15 +231,15 @@ static struct notifier_block g_dev_notifier = {
 
 //[[ johnny : enable to selecte bin file on Makefile
 #ifndef STA_FIRMWARE
-#define STA_FIRMWARE	"wifi_firmware.bin"
+#define STA_FIRMWARE	"wilc1000_fw.bin"
 #endif
 
 #ifndef AP_FIRMWARE
-#define AP_FIRMWARE		"wifi_firmware_ap.bin"
+#define AP_FIRMWARE		"wilc1000_ap_fw.bin"
 #endif
 
 #ifndef P2P_CONCURRENCY_FIRMWARE
-#define P2P_CONCURRENCY_FIRMWARE	"wifi_firmware_p2p_concurrency.bin"
+#define P2P_CONCURRENCY_FIRMWARE	"wilc1000_p2p_concurrency_fw.bin"
 #endif
 //]]
 
