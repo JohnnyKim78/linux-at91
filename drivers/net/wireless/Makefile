@@ -58,9 +58,4 @@ obj-$(CONFIG_MWIFIEX)	+= mwifiex/
 obj-$(CONFIG_BRCMFMAC)	+= brcm80211/
 obj-$(CONFIG_BRCMSMAC)	+= brcm80211/
 
-#############################################
-# NMI Korea Johnny
-#############################################
-obj-$(CONFIG_NMC1XXX_WIFI_MODULE) += nmi/
-obj-$(CONFIG_NMC1XXX_PREALLOCATE_DURING_SYSTEM_BOOT) += nmi/src/nmi_memory/
-#############################################
+obj-$(CONFIG_AT_WI) += atmel/

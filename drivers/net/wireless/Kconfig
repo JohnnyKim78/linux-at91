@@ -114,6 +114,8 @@ config AT76C50X_USB
           Enable support for USB Wireless devices using Atmel at76c503,
           at76c505 or at76c505a chips.
 
+source "drivers/net/wireless/atmel/Kconfig"
+
 config AIRO_CS
 	tristate "Cisco/Aironet 34X/35X/4500/4800 PCMCIA cards"
 	depends on PCMCIA && (BROKEN || !M32R)
@@ -280,10 +282,5 @@ source "drivers/net/wireless/rtlwifi/Kconfig"
 source "drivers/net/wireless/ti/Kconfig"
 source "drivers/net/wireless/zd1211rw/Kconfig"
 source "drivers/net/wireless/mwifiex/Kconfig"
-
-# ===========================================
-# NMC1XXX WiFi
-# ===========================================
-source "drivers/net/wireless/nmi/Kconfig"
 
 endif # WLAN
