@@ -8,9 +8,6 @@ EXTRA_CFLAGS += -DEXPORT_SYMTAB
 EXTRA_CFLAGS += -D__CHECK_ENDIAN__
 
 
-DEBFLAGS = -O -g
-
-
 ifeq ($(strip $(CONFIG_WILC1000_SDIO)),y)
 	EXTRA_CFLAGS += -DWILC_SDIO
 	EXTRA_CFLAGS += -DWILC_OPTIMIZE_SLEEP_INT
@@ -24,8 +21,6 @@ else
 	$(MODULE_NAME)-objs += driver/linux/source/linux_wlan_spi.o
 endif
 
-#------------------------------------------------------------------------------
-#[[ version 9.0
 EXTRA_CFLAGS += -DNMC_ASIC_A0
 EXTRA_CFLAGS += -DPLL_WORKAROUND
 EXTRA_CFLAGS += -DCONNECT_DIRECT
@@ -39,7 +34,6 @@ EXTRA_CFLAGS += -DWILC_PLATFORM=WILC_LINUXKERNEL
 EXTRA_CFLAGS += -Wno-unused-function
 EXTRA_CFLAGS += -DUSE_WIRELESS
 
-#	[[ Add KR Team
 EXTRA_CFLAGS += -DSTATIC_MACADDRESS
 EXTRA_CFLAGS += -DCOMPLEMENT_BOOT
 
@@ -59,14 +53,12 @@ else
 endif
 
 
-#[[ include
 EXTRA_CFLAGS += -I$(src)/wilc_oswrapper/include/ 
 EXTRA_CFLAGS += -I$(src)/
 EXTRA_CFLAGS += -I$(src)/driver/include/
 EXTRA_CFLAGS += -I$(src)/driver/
 EXTRA_CFLAGS += -I$(src)/driver/linux/include/
 
-#------------------------------------------------------------------------------
 $(MODULE_NAME)-objs += driver/linux/source/wilc_wfi_netdevice.o
 $(MODULE_NAME)-objs += driver/linux/source/wilc_wfi_cfgoperations.o
 $(MODULE_NAME)-objs += driver/linux/source/linux_wlan.o

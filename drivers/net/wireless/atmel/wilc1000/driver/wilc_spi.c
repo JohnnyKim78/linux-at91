@@ -1,6 +1,6 @@
 ////////////////////////////////////////////////////////////////////////////
 //
-// Copyright (c) Newport Media Inc.  All rights reserved.
+// Copyright (c) Atmel Corporation.  All rights reserved.
 //
 // Module Name:  wilc_spi.c
 //

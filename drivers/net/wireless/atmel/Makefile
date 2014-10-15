@@ -1,1 +1,1 @@
-obj-$(CONFIG_AT_WI)		+= wilc1000/
+obj-$(CONFIG_ATMEL_SMARTCONNECT)		+= wilc1000/

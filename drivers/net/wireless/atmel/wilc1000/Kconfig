@@ -1,6 +1,6 @@
 config WILC1000
 	tristate "WILC1000 support (WiFi only)"
-    depends on AT_WI
+    depends on ATMEL_SMARTCONNECT
 	---help---
 		This module only support IEEE 802.11n WiFi.
 

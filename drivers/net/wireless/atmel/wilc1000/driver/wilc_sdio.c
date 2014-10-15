@@ -1,6 +1,6 @@
 ////////////////////////////////////////////////////////////////////////////
 //
-// Copyright (c) Newport Media Inc.  All rights reserved.
+// Copyright (c) Atmel Inc.  All rights reserved.
 //
 // Module Name:  wilc_sdio.c
 //

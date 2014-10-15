@@ -1,12 +1,11 @@
 /*
-	Copyright (c) Newport Media Inc.  All rights reserved.
-	Copyright (c) WRG Inc.  All rights reserved.
+	Copyright (c) Atmel Inc.  All rights reserved.
 
-	Use of this sample source code is subject to the terms of the Newport Media Inc.
+	Use of this sample source code is subject to the terms of the Atmel Inc.
 	license agreement under which you licensed this sample source code. If you did not
 	accept the terms of the license agreement, you are not authorized to use this
 	sample source code. For the terms of the license, please see the license agreement
-	between you and Newport Media Inc.
+	between you and Atmel Inc.
 	THE SAMPLE SOURCE CODE IS PROVIDED "AS IS", WITH NO WARRANTIES OR INDEMNITIES.
 */
 /**

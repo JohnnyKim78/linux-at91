@@ -1,6 +1,6 @@
 /*
-* NewportMedia WiFi chipset driver test tools - wilc-debug
-* Copyright (c) 2012 NewportMedia Inc.
+* Atmel WiFi chipset driver test tools - wilc-debug
+* Copyright (c) 2012 Atmel Inc.
 *
 * This program is free software; you can redistribute it and/or modify
 * it under the terms of the GNU General Public License version 2 as
