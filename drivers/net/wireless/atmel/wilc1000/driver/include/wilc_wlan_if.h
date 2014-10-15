@@ -1,6 +1,6 @@
 ////////////////////////////////////////////////////////////////////////////
 //
-// Copyright (c) Atmel Inc.  All rights reserved.
+// Copyright (c) Atmel Corporation.  All rights reserved.
 //
 // Module Name:  wilc_wlan_if.h
 //

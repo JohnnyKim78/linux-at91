@@ -1,11 +1,11 @@
 /*
-	Copyright (c) Atmel Inc.  All rights reserved.
+	Copyright (c) Atmel Corporation.  All rights reserved.
 
-	Use of this sample source code is subject to the terms of the Atmel Inc.
+	Use of this sample source code is subject to the terms of the Atmel Corporation.
 	license agreement under which you licensed this sample source code. If you did not
 	accept the terms of the license agreement, you are not authorized to use this
 	sample source code. For the terms of the license, please see the license agreement
-	between you and Atmel Inc.
+	between you and Atmel Corporation.
 	THE SAMPLE SOURCE CODE IS PROVIDED "AS IS", WITH NO WARRANTIES OR INDEMNITIES.
 */
 /**
