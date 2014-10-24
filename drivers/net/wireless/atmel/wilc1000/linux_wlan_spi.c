@@ -13,7 +13,7 @@
 
 #define USE_SPI_DMA     0	//johnny add
 
-#ifdef NMC_ASIC_A0
+#ifdef WILC_ASIC_A0
 #if defined(PLAT_PANDA_ES_OMAP4460)
 #define MIN_SPEED 12000000
 #define MAX_SPEED 24000000
@@ -24,11 +24,11 @@
 #define MIN_SPEED 24000000
 #define MAX_SPEED 48000000
 #endif
-#else /* NMC_ASIC_A0 */
+#else /* WILC_ASIC_A0 */
 /* Limit clk to 6MHz on FPGA. */
 #define MIN_SPEED 6000000
 #define MAX_SPEED 6000000 
-#endif /* NMC_ASIC_A0 */
+#endif /* WILC_ASIC_A0 */
 
 static uint32_t SPEED = MIN_SPEED;
 

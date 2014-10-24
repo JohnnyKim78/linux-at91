@@ -14,7 +14,7 @@
 #define SDIO_MODALIAS "nmc1000_sdio"
 #endif
 
-#ifdef NMC_ASIC_A0
+#ifdef WILC_ASIC_A0
 #if defined (NM73131_0_BOARD)
  #define MAX_SPEED 50000000
 #elif defined (PLAT_ALLWINNER_A10)
@@ -36,10 +36,10 @@
 #else
 #define MAX_SPEED 50000000
 #endif
-#else /* NMC_ASIC_A0 */
+#else /* WILC_ASIC_A0 */
 /* Limit clk to 6MHz on FPGA. */
 #define MAX_SPEED 6000000
-#endif /* NMC_ASIC_A0 */
+#endif /* WILC_ASIC_A0 */
 
 
 struct sdio_func* local_sdio_func = NULL;

@@ -1610,7 +1610,7 @@ static int wilc_wlan_firmware_download(const uint8_t *buffer, uint32_t buffer_si
 	blksz = (1ul << 12); /* Bug 4703: 4KB Good enough size for most platforms = PAGE_SIZE. */
 	/* Allocate a DMA coherent  buffer. */
 
-#if (defined NMC_PREALLOC_AT_BOOT)
+#if (defined WILC_PREALLOC_AT_BOOT)
 {
 	extern void * get_fw_buffer(void);
 	dma_buffer = (uint8_t *)get_fw_buffer();
@@ -1668,7 +1668,7 @@ static int wilc_wlan_firmware_download(const uint8_t *buffer, uint32_t buffer_si
 
 _fail_:
 
-#if (defined NMC_PREALLOC_AT_BOOT)
+#if (defined WILC_PREALLOC_AT_BOOT)
 
 #else
 		if(dma_buffer) g_wlan.os_func.os_free(dma_buffer);
@@ -1941,7 +1941,7 @@ static void wilc_wlan_cleanup(void)
 		clean up buffer
 	**/
 
-#if (defined NMC_PREALLOC_AT_BOOT)
+#if (defined WILC_PREALLOC_AT_BOOT)
 
 #else
 	#ifdef MEMORY_STATIC
@@ -2336,7 +2336,7 @@ int wilc_wlan_init(wilc_wlan_inp_t *inp, wilc_wlan_oup_t *oup)
 	/**
 		alloc tx, rx buffer
 	**/
-#if (defined NMC_PREALLOC_AT_BOOT)
+#if (defined WILC_PREALLOC_AT_BOOT)
 	extern void * get_tx_buffer(void);
 	extern void * get_rx_buffer(void);
 
@@ -2346,7 +2346,7 @@ int wilc_wlan_init(wilc_wlan_inp_t *inp, wilc_wlan_oup_t *oup)
 
 
 	if(g_wlan.tx_buffer == WILC_NULL)
-#if (defined NMC_PREALLOC_AT_BOOT)
+#if (defined WILC_PREALLOC_AT_BOOT)
 		g_wlan.tx_buffer = (uint8_t *)get_tx_buffer();	
 #else
 		g_wlan.tx_buffer = (uint8_t *)g_wlan.os_func.os_malloc(g_wlan.tx_buffer_size);
@@ -2363,7 +2363,7 @@ int wilc_wlan_init(wilc_wlan_inp_t *inp, wilc_wlan_oup_t *oup)
 /* rx_buffer is not used unless we activate USE_MEM STATIC which is not applicable, allocating such memory is useless*/	
 #if defined (MEMORY_STATIC)
 	if(g_wlan.rx_buffer == WILC_NULL)
-  #if (defined NMC_PREALLOC_AT_BOOT)
+  #if (defined WILC_PREALLOC_AT_BOOT)
 		g_wlan.rx_buffer = (uint8_t *)get_rx_buffer();
   #else
 		g_wlan.rx_buffer = (uint8_t *)g_wlan.os_func.os_malloc(g_wlan.rx_buffer_size);
@@ -2421,7 +2421,7 @@ int wilc_wlan_init(wilc_wlan_inp_t *inp, wilc_wlan_oup_t *oup)
 
 _fail_:	
 	
-#if (defined NMC_PREALLOC_AT_BOOT)
+#if (defined WILC_PREALLOC_AT_BOOT)
 
 #else
   #ifdef MEMORY_STATIC	
